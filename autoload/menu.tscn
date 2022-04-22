@@ -1,0 +1,103 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://ui/main_menu.tscn" type="PackedScene" id=1]
+[ext_resource path="res://autoload/menu.gd" type="Script" id=2]
+[ext_resource path="res://fonts/prolamina_2_update.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://zombie_shooter_icon.png" type="Texture" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxLine" id=8]
+color = Color( 0.92549, 0.27451, 0.27451, 1 )
+thickness = 2
+
+[sub_resource type="ImageTexture" id=7]
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.243137, 0.243137, 0.32549, 0.784314 )
+
+[sub_resource type="Theme" id=4]
+Button/colors/font_color = Color( 1, 0.768627, 0.376471, 1 )
+Button/colors/font_color_focus = Color( 1, 0.768627, 0.376471, 1 )
+Button/colors/font_color_hover = Color( 1, 0.835294, 0.556863, 1 )
+Button/colors/font_color_pressed = Color( 1, 0.768627, 0.376471, 1 )
+Button/styles/disabled = SubResource( 6 )
+Button/styles/focus = SubResource( 8 )
+Button/styles/hover = SubResource( 6 )
+Button/styles/normal = SubResource( 6 )
+Button/styles/pressed = SubResource( 6 )
+Label/colors/font_color = Color( 0.937255, 0.894118, 0.690196, 1 )
+WindowDialog/constants/close_h_ofs = 0
+WindowDialog/constants/close_v_ofs = 0
+WindowDialog/constants/scaleborder_size = 0
+WindowDialog/constants/title_height = 0
+WindowDialog/icons/close = SubResource( 7 )
+WindowDialog/styles/panel = SubResource( 5 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+outline_color = Color( 0.937255, 0.894118, 0.690196, 1 )
+font_data = ExtResource( 3 )
+
+[node name="Menu" type="Control"]
+pause_mode = 2
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = SubResource( 4 )
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.141176, 0.141176, 0.160784, 0.784314 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="logo" type="Control" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -86.5
+margin_top = -28.0
+margin_right = 86.5
+
+[node name="Label61" type="Label" parent="logo"]
+margin_top = -4.0
+margin_right = 68.0
+margin_bottom = 23.0
+custom_colors/font_color = Color( 0.929412, 0.109804, 0.141176, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "МЯСО"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label100" type="Label" parent="logo"]
+margin_left = 98.0
+margin_top = -4.0
+margin_right = 223.0
+margin_bottom = 43.0
+custom_colors/font_color = Color( 0.937255, 0.894118, 0.690196, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "РУБКА"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="logo"]
+margin_left = 66.0
+margin_top = -14.0
+margin_right = 99.0
+margin_bottom = 29.0
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MainMenu" parent="." instance=ExtResource( 1 )]
+__meta__ = {
+"_edit_horizontal_guides_": [ 2469.0 ]
+}

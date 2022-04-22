@@ -1,0 +1,11 @@
+Model Information:
+* title:	Computer Tray
+* source:	https://sketchfab.com/3d-models/computer-tray-2e5fc0d8175a44148d76c72b35372d12
+* author:	Barles (https://sketchfab.com/barles)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Computer Tray" (https://sketchfab.com/3d-models/computer-tray-2e5fc0d8175a44148d76c72b35372d12) by Barles (https://sketchfab.com/barles) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
