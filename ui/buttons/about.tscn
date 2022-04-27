@@ -1,12 +1,8 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://default_buttongroup.tres" type="ButtonGroup" id=1]
-[ext_resource path="res://fonts/Arkhip_font.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://ui/buttons/about.gd" type="Script" id=3]
-
-[sub_resource type="DynamicFont" id=4]
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 2 )
+[ext_resource path="res://ui/buttons/button font.tres" type="DynamicFont" id=4]
 
 [sub_resource type="StyleBoxLine" id=9]
 content_margin_left = 40.0
@@ -16,11 +12,6 @@ thickness = 0
 [sub_resource type="StyleBoxLine" id=14]
 content_margin_left = 40.0
 color = Color( 0.92549, 0.27451, 0.27451, 1 )
-
-[sub_resource type="DynamicFont" id=10]
-size = 22
-outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 2 )
 
 [sub_resource type="Animation" id=11]
 length = 0.001
@@ -90,7 +81,7 @@ custom_colors/font_color_focus = Color( 1, 0.768627, 0.376471, 1 )
 custom_colors/font_color = Color( 1, 0.768627, 0.376471, 1 )
 custom_colors/font_color_hover = Color( 1, 0.835294, 0.556863, 1 )
 custom_colors/font_color_pressed = Color( 1, 0.768627, 0.376471, 1 )
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = ExtResource( 4 )
 custom_styles/hover = SubResource( 9 )
 custom_styles/pressed = SubResource( 14 )
 custom_styles/focus = SubResource( 14 )
@@ -99,16 +90,13 @@ group = ExtResource( 1 )
 text = "ОБ ИГРЕ"
 align = 0
 script = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Label" type="Label" parent="."]
 visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_colors/font_color = Color( 1, 0.768627, 0.376471, 1 )
-custom_fonts/font = SubResource( 10 )
+custom_fonts/font = ExtResource( 4 )
 text = ">"
 valign = 1
 __meta__ = {

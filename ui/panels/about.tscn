@@ -9,13 +9,10 @@ margin_top = 92.0
 margin_right = 718.0
 margin_bottom = 508.0
 custom_constants/separation = 15
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Label" type="Label" parent="."]
 margin_right = 413.0
-margin_bottom = 101.0
+margin_bottom = 97.0
 custom_colors/font_color = Color( 1, 0.768627, 0.376471, 1 )
 custom_fonts/font = ExtResource( 1 )
 text = "Зомби Шутер: Мясорубка
@@ -24,9 +21,9 @@ text = "Зомби Шутер: Мясорубка
 учстниками Godot Ru дискорд сервера"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_top = 116.0
+margin_top = 112.0
 margin_right = 413.0
-margin_bottom = 416.0
+margin_bottom = 412.0
 rect_min_size = Vector2( 0, 300 )
 custom_colors/default_color = Color( 0.866667, 0.866667, 0.866667, 1 )
 custom_fonts/normal_font = ExtResource( 1 )

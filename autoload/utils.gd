@@ -1,3 +1,4 @@
+tool
 extends Node
 
 static func dir_contents(path):
@@ -28,3 +29,17 @@ static func get_folders(path:String):
 	else:
 		print("An error occurred when trying to access the path.")
 	return dirs
+
+static func get_files(path:String):
+	var files: = []
+	var dir = Directory.new()
+	if dir.open(path) == OK:
+		dir.list_dir_begin(true, true)
+		var file_name = dir.get_next()
+		while file_name != "":
+			if !dir.current_is_dir():
+				files.push_back(file_name)
+			file_name = dir.get_next()
+	else:
+		print("An error occurred when trying to access the path.")
+	return files

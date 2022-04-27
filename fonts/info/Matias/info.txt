@@ -1,0 +1,4 @@
+Copyright (c) 2016 by Vitaliy Tsygankov & Jovanny Lemonad. All rights reserved.
+Vendor URL: http://www.jovanny.ru/
+Designer URL: http://www.limostudio.ru/
+

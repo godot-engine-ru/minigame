@@ -7,12 +7,13 @@
 [node name="Fail" instance=ExtResource( 4 )]
 __meta__ = {
 "_edit_horizontal_guides_": [ 2469.0 ],
-"_edit_use_anchors_": false,
 "_editor_description_": "fail page"
 }
 
 [node name="Play" parent="MarginContainer/ButtonsContainer" index="0" instance=ExtResource( 3 )]
+margin_top = 159.0
+margin_bottom = 199.0
 
 [node name="BackToMenu" parent="MarginContainer/ButtonsContainer" index="1" instance=ExtResource( 2 )]
-margin_top = 52.0
-margin_bottom = 102.0
+margin_top = 201.0
+margin_bottom = 241.0
